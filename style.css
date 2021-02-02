@@ -3,6 +3,10 @@
   font-family: Verdana;
   font-size: medium;
 }
+html {
+  background-color: darkslategrey;
+  color: whitesmoke;
+}
 h1 {
   display: flex;
   justify-content: center;
@@ -11,7 +15,7 @@ h1 {
 
 #lists {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 #first,
@@ -21,13 +25,12 @@ h1 {
   text-transform: uppercase;
   display: flex;
   justify-content: flex-start;
-  align-items: space-around;
   flex-flow: column wrap;
   border: solid 1px salmon;
   border-radius: 0.2rem;
   padding: 0.5rem;
-  width: calc(100% / 4);
-  height: 300px;
+  width: 30%;
+  height: 250px;
 }
 button {
   font-size: 0.5rem;
@@ -36,12 +39,12 @@ button {
   margin: 2px;
   border: none;
   border-radius: 0.2rem;
-  box-shadow: 0 0 3px 0 #fff;
+  box-shadow: 0 0 1px 0 #fff;
 }
 button:focus {
-  box-shadow: 0 0 3px 0 #fff;
+  box-shadow: 0 0 1px 0 #fff;
   /* outline-style: auto; */
-  outline-color: black;
+  outline-color: #fff;
 }
 
 #lists {
@@ -50,6 +53,7 @@ button:focus {
   align-items: center;
   flex-flow: row nowrap;
   width: 100%;
+  padding: 1rem;
 }
 ul {
   display: flex;
@@ -63,10 +67,11 @@ ul {
   list-style: none;
 }
 li {
+  padding: 0.1em;
   width: 100%;
   border-radius: 0.2rem;
   margin: 0.2rem;
 }
 .selected {
-  background-color: salmon;
+  background-color: darkorange;
 }
