@@ -26,6 +26,7 @@ const users = [
 ];
 
 // callback function to move li divs from one ul to target ul
+/* very smart use of closure! */
 function moveIt(targetId) {
   return function () {
     // this context is button div that was clicked due to closure
@@ -47,7 +48,9 @@ function moveIt(targetId) {
 function selectName(elem) {
   elem = elem.target;
   elemClasses = elem.classList;
-
+  /*could also use elem.classList.toggle('selected')
+  which encompasses all the logic in the 4 lines below 
+  */
   if ([...elemClasses].includes("selected")) {
     elemClasses.remove("selected");
   } else {
